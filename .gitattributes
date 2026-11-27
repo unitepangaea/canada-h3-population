@@ -1,0 +1,4 @@
+* text=auto
+*.gpkg binary
+*.parquet binary
+*.pdf binary

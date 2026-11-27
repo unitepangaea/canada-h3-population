@@ -1,0 +1,18 @@
+{
+  "title": "Hexagonal Population Surfaces for Canada (H3 Resolutions 6, 7 and 8)",
+  "upload_type": "dataset",
+  "description": "<p>National population count and density surfaces for Canada on the H3 hexagonal grid at resolutions 6, 7 and 8, produced by disaggregating 2021 Census Dissemination Block population with a hybrid dasymetric method. Includes the hybrid, Pseudo-Household and National Address Register layers, block-level allocation tables, the source code and documentation. Method described in doi:10.20944/preprints202609.2636.v1.</p>",
+  "creators": [
+    {"name": "McGaughey, Tomoko", "orcid": "0000-0001-5789-7785"},
+    {"name": "Peters, Paul A.", "affiliation": "Carleton University", "orcid": "0000-0001-5225-2005"}
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "keywords": ["dasymetric mapping", "H3 hexagons", "population density", "Canada", "Census geography", "address-point allocation"],
+  "related_identifiers": [
+    {"identifier": "10.20944/preprints202609.2636.v1", "relation": "isDescribedBy", "resource_type": "publication-preprint"},
+    {"identifier": "https://github.com/unitepangaea/canada-h3-population", "relation": "isSupplementTo", "resource_type": "software"}
+  ],
+  "version": "2.0.0",
+  "language": "eng"
+}
