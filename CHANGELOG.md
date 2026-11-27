@@ -2,7 +2,9 @@
 
 Versions follow the method version used in the paper. Each release has its own Zenodo DOI; the concept DOI always resolves to the latest release.
 
-## [2.0.0] – unreleased
+## [2.0.0] – 2026-11-27
+Archived on Zenodo as doi:10.5281/zenodo.24592693 (concept DOI doi:10.5281/zenodo.24592692). The GitHub release for this version is tagged `v1.0.0`.
+
 - Layers at H3 resolutions 6, 7 and 8, each binned directly from points (not aggregated from resolution 8).
 - M1: NAR locations restricted to residential and partial-residential building use (BU_USE 1, 2).
 - M2: NAR point-in-polygon assignment uses the 2021 DB digital boundary file.
