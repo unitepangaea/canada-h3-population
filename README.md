@@ -4,7 +4,7 @@ Open, national population count and density surfaces for Canada on the Uber H3 h
 
 > McGaughey, T. and Peters, P.A. (2026). *A Hybrid Dasymetric Method for Hexagonal Population Density Mapping in Canada: Reconciling Road-Based and Address-Based Allocation at National Scale.* Preprints.org. https://doi.org/10.20944/preprints202609.2636.v1
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24592692.svg)](https://doi.org/10.5281/zenodo.24592692)
 
 ---
 

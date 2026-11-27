@@ -3,8 +3,15 @@ message: "If you use these data or this code, please cite the dataset and the pa
 title: "Hexagonal Population Surfaces for Canada (H3 Resolutions 6, 7 and 8)"
 type: dataset
 version: "2.0.0"
-date-released: "2026-12-01"   # TODO: set on release
-doi: "10.5281/zenodo.XXXXXXX"  # TODO: Zenodo concept DOI after first release
+date-released: "2026-11-27"
+doi: "10.5281/zenodo.24592692"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24592692"
+    description: "Concept DOI: all versions, resolving to the latest"
+  - type: doi
+    value: "10.5281/zenodo.24592693"
+    description: "Version 2.0.0, first Zenodo archive (2026-11-27)"
 license: CC-BY-4.0
 repository-code: "https://github.com/unitepangaea/canada-h3-population"
 url: "https://carleton.ca/determinants/"

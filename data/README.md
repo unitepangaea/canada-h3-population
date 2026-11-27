@@ -2,7 +2,7 @@
 
 The national layers are archived on Zenodo, which assigns a DOI to each release, and are not stored in this repository because several files exceed GitHub's 100 MB file limit.
 
-**Zenodo record:** https://doi.org/10.5281/zenodo.XXXXXXX
+**Zenodo record:** https://doi.org/10.5281/zenodo.24592692 (concept DOI, which always resolves to the latest version)
 
 ## Download
 

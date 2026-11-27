@@ -16,7 +16,7 @@ sf::sf_use_s2(FALSE)  # planar operations on small windows are adequate here
 DATA_DIR       <- "data"
 FIG_DIR        <- "figures"
 VERSION        <- "v2"
-ZENODO_RECORD  <- "XXXXXXX"   # TODO: Zenodo record number after release
+ZENODO_CONCEPT <- "24592692"  # Zenodo concept record: all versions, resolves to the latest
 dir.create(FIG_DIR, showWarnings = FALSE)
 
 # Coordinate reference systems
@@ -67,9 +67,20 @@ add_density_class <- function(x) {
 }
 
 # ---- Download and verify ------------------------------------------------------
-download_layer <- function(file_name, dest = DATA_DIR) {
+# Record number of the latest version of the Zenodo record. File downloads need a
+# version record; the concept record only redirects to it.
+zenodo_latest_record <- function(concept = ZENODO_CONCEPT) {
+  h <- curlGetHeaders(sprintf("https://zenodo.org/records/%s", concept), redirect = FALSE)
+  loc <- grep("^location:", h, ignore.case = TRUE, value = TRUE)
+  if (length(loc) == 0) return(concept)
+  sub(".*/records/([0-9]+).*", "\\1", trimws(loc[1]))
+}
+
+# Download one release file and check it against MANIFEST.csv. Pass `record` to
+# pin a specific Zenodo version instead of the latest.
+download_layer <- function(file_name, dest = DATA_DIR, record = zenodo_latest_record()) {
   url <- sprintf("https://zenodo.org/records/%s/files/%s?download=1",
-                 ZENODO_RECORD, file_name)
+                 record, file_name)
   out <- file.path(dest, file_name)
   options(timeout = max(3600, getOption("timeout")))
   utils::download.file(url, out, mode = "wb")
